@@ -1,1 +1,24 @@
 @use "../abstracts" as *;
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--oc-pink-7),
+    var(--oc-pink-9)
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--oc-gray-0);
+  box-shadow: 0 2rem 7rem rgba($color: #000000, $alpha: 0.3);
+
+  @media only screen and (max-width: 75em) {
+    margin: 0;
+    max-width: 100%;
+  }
+}

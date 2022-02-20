@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+// Kill standard styles
 *,
 *::before,
 *::after {
@@ -8,6 +9,7 @@
   box-sizing: inherit;
 }
 
+// Better behavior for sizing
 body {
   box-sizing: border-box;
 }

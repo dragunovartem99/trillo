@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+.main-window {
+  display: flex;
+}
+
+.product__details {
+  display: flex;
+  gap: var(--kegel-14);
+  padding: var(--kegel-14);
+  background-color: var(--oc-gray-2);
+  border-bottom: 0.1rem solid var(--oc-gray-2);
+  font-size: var(--kegel-4);
+  line-height: var(--line-height-md);
+}
+
+.product__descr {
+  flex: 0 0 60%;
+  background-color: var(--oc-white);
+  box-shadow: 0 var(--kegel-7) var(--kegel-15)
+    rgba($color: #000000, $alpha: 0.1);
+  padding: var(--kegel-10);
+  font-size: var(--kegel-4);
+
+  &__p {
+    margin-bottom: var(--kegel-10);
+  }
+
+  &__list {
+    list-style: none;
+    padding-block: var(--kegel-10);
+    margin-block: var(--kegel-10);
+    border-top: 0.1rem solid var(--oc-gray-2);
+    border-bottom: 0.1rem solid var(--oc-gray-2);
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+      flex: 0 0 50%;
+      margin-bottom: 0.7rem;
+
+      &::before {
+        content: "";
+        // background-image: url(../img/chevron-thin-right.svg);
+        // background-size: cover;
+        width: var(--kegel-1);
+        height: var(--kegel-1);
+        display: inline-block;
+        margin-right: var(--kegel-1);
+        background-color: var(--oc-pink-7);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+      }
+    }
+  }
+}
+
+.product__reviews {
+  background-color: brown;
+  flex: 1;
+}

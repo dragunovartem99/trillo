@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--oc-gray-2);
+}
